@@ -168,7 +168,7 @@ font-size: 30px;
 }
 @media(max-width: 600px){
 #nav{
-  margin-left: -20%;
+  margin-left: -25%;
 }
 #canvas{
   height: 500px;
