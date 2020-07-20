@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualize Algo.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<header>
+	<nav id="nav">
+		<div id="flex">
+		<div>
+		<button id="shuffle" class="togethernav">Shuffle</button></div>
+		<div><button id="sort" class="togethernav">Sort</button></div>
+		<div><button id="reset" class="togethernav">Reset</button></div>
+		<div class="togethernav dropdown">
+			<span >Algo.</span>
+			<div class="dropdown-content">
+				<ul style="list-style-type: none;">
+					<li id="bs"><a style="text-decoration: none;color:black" href="/bubble"> Bubble Sort</a></li><hr>
+					<li id="bs"><a style="text-decoration: none;color:black" href="/quicksort"> Quick Sort</a></li><hr>
+					<li id="qs"><a style="text-decoration: none;color:black" href="/mergesort">Merge Sort</a></li><hr>
+					<li id="qs"><a style="text-decoration: none;color:black" href="/heapsort">Heap Sort</a></li><hr>
+					<li id="qs"><a style="text-decoration: none;color:black" href="/selectsort">Select Sort</a></li><hr>
+					<li id="qs"><a style="text-decoration: none;color:black" href="/insertsort">Insert Sort</a></li><hr>
+				</ul>
+			</div>
+		</div>
+		<div id="flex2">
+			<div>
+				<input class="slider" type="range" name="rangeInput" min="3" max="63" onchange="updateTextInput(this.value);"  id="pareshani" style="margin-top: 20px;margin-right: 5%">
+			</div>
+			<div><h3 id="metoo"style="color: white;text-shadow: 4px 4px black;">Select no. of <span>Bars and speed</span></h3></div>
+		</div>
+	</div>
+		<!-- <input type="text" id="textInput" value="" style="width: 50px;position: relative;"> -->
+	</nav>
+	</header>
+	<div id="message">
+		<section id="closebtn"><button id="close"><i class="fa fa-window-close" aria-hidden="true"></i></button></section>
+		<h1>Merge Sort</h1><br>
+		<h1>TUTORIAL</h1><br>
+		<h3 style="text-align: left;padding:10px;">Inorder to start:<br>
+		1).select the algorithm form algo. u want to visualise.
+		2).select no.of bars and speed from the slider<br>
+		3).click shuffle to shuffle randomly the bars <br>
+		4).click sort to begin<br>
+		5).U can reset anytime using reset button.<br>
+		
+</h3>
+	</div>
+	
+
+	
+	<canvas id="canvas" height="500px" width="900px" style="background-color: #303030" >
+		
+	</canvas>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script3.js"></script>
+
+</body>
+</html>
