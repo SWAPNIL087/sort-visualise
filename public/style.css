@@ -127,7 +127,7 @@ font-size: 30px;
   #message{
     width:300px;
     height: 440px;
-    margin-left: -15%;
+    margin-left: -22%;
   }
 }
 
@@ -138,8 +138,11 @@ font-size: 30px;
   margin-right: 5%;
   margin-top: 23px;
   text-shadow: 4px 4px black;
+
 }
+.sticker { display: none; }
 @media(max-width: 882px) {
+  .sticker { display: none; }
   #nav{
     margin-left: -15%;
   }
@@ -148,6 +151,7 @@ font-size: 30px;
   }
 }
 @media(max-width: 774px){
+  .sticker { display: none; }
   #pareshani{
     width:150px;
   }
@@ -167,8 +171,11 @@ font-size: 30px;
   margin-left: -20%;
 }
 #canvas{
-  height: 400px;
+  height: 500px;
 }
+.sticker { display: inline-block; }
+.normal {display: none;}
+
 }
 .dropdown{
   position: relative;

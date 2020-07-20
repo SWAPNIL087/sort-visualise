@@ -9,7 +9,7 @@ app.use(express.static(publicDirectory))
 
 app.set('view engine','hbs');
 
-app.get('/bubble',function(req,res){
+app.get('/',function(req,res){
 	res.render('practice');
 });
 app.get('/quicksort',function(req,res){
